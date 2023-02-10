@@ -16,6 +16,7 @@
 		424F790A2995043A00BA5EE6 /* ARKitFaceTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F79092995043A00BA5EE6 /* ARKitFaceTestTests.swift */; };
 		424F79142995043A00BA5EE6 /* ARKitFaceTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F79132995043A00BA5EE6 /* ARKitFaceTestUITests.swift */; };
 		424F79162995043A00BA5EE6 /* ARKitFaceTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424F79152995043A00BA5EE6 /* ARKitFaceTestUITestsLaunchTests.swift */; };
+		424F7923299507D000BA5EE6 /* face.png in Resources */ = {isa = PBXBuildFile; fileRef = 424F7922299507D000BA5EE6 /* face.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		424F790F2995043A00BA5EE6 /* ARKitFaceTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitFaceTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		424F79132995043A00BA5EE6 /* ARKitFaceTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitFaceTestUITests.swift; sourceTree = "<group>"; };
 		424F79152995043A00BA5EE6 /* ARKitFaceTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitFaceTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		424F7922299507D000BA5EE6 /* face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = face.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				424F78F42995043700BA5EE6 /* SceneDelegate.swift */,
 				424F78F62995043700BA5EE6 /* ViewController.swift */,
 				424F78F82995043700BA5EE6 /* Main.storyboard */,
+				424F7922299507D000BA5EE6 /* face.png */,
 				424F78FB2995043A00BA5EE6 /* Assets.xcassets */,
 				424F78FD2995043A00BA5EE6 /* LaunchScreen.storyboard */,
 				424F79002995043A00BA5EE6 /* Info.plist */,
@@ -233,6 +236,7 @@
 			files = (
 				424F78FF2995043A00BA5EE6 /* LaunchScreen.storyboard in Resources */,
 				424F78FC2995043A00BA5EE6 /* Assets.xcassets in Resources */,
+				424F7923299507D000BA5EE6 /* face.png in Resources */,
 				424F78FA2995043700BA5EE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,11 +444,12 @@
 				DEVELOPMENT_TEAM = XZB67NKL7M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARKitFaceTest/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,9 +457,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcsoft.test.ARKitFaceTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -468,11 +476,12 @@
 				DEVELOPMENT_TEAM = XZB67NKL7M;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ARKitFaceTest/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = Camera;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,9 +489,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zcsoft.test.ARKitFaceTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
